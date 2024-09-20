@@ -30,6 +30,9 @@ ft_tolower: $(DIR_LIB_FUN)/tolower/test
 .PHONY: ft_toupper
 ft_toupper: $(DIR_LIB_FUN)/toupper/test
 
+.PHONY: ft_isalpha
+ft_isalpha: $(DIR_LIB_FUN)/isalpha/test
+
 .PHONY: ft_isprint
 ft_isprint: $(DIR_LIB_FUN)/isprint/test
 
