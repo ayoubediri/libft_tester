@@ -86,5 +86,3 @@ make Bonus_functions
   ❎ft_lstmap
 
 ![image](https://github.com/user-attachments/assets/de4abd85-4da6-4837-a9e9-0cd7ad8f1964)
-![image](https://github.com/user-attachments/assets/013b3737-de39-4954-91fd-7b07ff8ef72f)
-
