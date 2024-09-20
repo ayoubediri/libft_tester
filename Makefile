@@ -42,6 +42,9 @@ ft_isalnum: $(DIR_LIB_FUN)/isalnum/test
 .PHONY: ft_isdigit
 ft_isdigit: $(DIR_LIB_FUN)/isdigit/test
 
+.PHONY: ft_atoi
+ft_atoi: $(DIR_LIB_FUN)/atoi/test
+
 .PHONY: Libc_functions
 Libc_functions: $(patsubst %/test.c,%/test,$(wildcard $(DIR_LIB_FUN)/*/test.c))
 
