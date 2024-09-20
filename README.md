@@ -35,3 +35,54 @@ make Additional_functions
 ```
 make Bonus_functions
 ```
+# THE Project progress:
+- Libc functions:
+  🆗isalnum
+  🆗isascii
+  🆗isdigit
+  🆗isprint
+  🆗tolower
+  🆗toupper
+  ❎memset
+  ❎bzero
+  ❎memcpy
+  ❎memccpy
+  ❎memmove
+  ❎memchr
+  ❎memcmp
+  ❎strlen
+  ❎strlcpy
+  ❎strlcat
+  ❎strchr
+  ❎strrchr
+  ❎strnstr
+  ❎strncmp
+  ❎atoi
+  ❎isalpha
+
+- Additional functions:
+  ❎calloc
+  ❎strdup
+  ❎ft_substr
+  ❎ft_strjoin
+  ❎ft_strtrim
+  ❎ft_split
+  ❎ft_itoa
+  ❎ft_strmapi
+  ❎ft_putchar_fd
+  ❎ft_putstr_fd
+  ❎ft_putendl_fd
+  ❎ft_putnbr_fd
+
+- Bonus functions:
+  ❎ft_lstnew
+  ❎ft_lstadd_front
+  ❎ft_lstsize
+  ❎ft_lstlast
+  ❎ft_lstadd_back
+  ❎ft_lstdelone
+  ❎ft_lstclear
+  ❎ft_lstiter
+  ❎ft_lstmap
+
+![image](https://github.com/user-attachments/assets/de4abd85-4da6-4837-a9e9-0cd7ad8f1964)
