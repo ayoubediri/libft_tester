@@ -44,6 +44,7 @@ make Bonus_functions
   🆗tolower
   🆗toupper
   🆗isalpha
+  🆗atoi
   ❎memset
   ❎bzero
   ❎memcpy
@@ -58,7 +59,6 @@ make Bonus_functions
   ❎strrchr
   ❎strnstr
   ❎strncmp
-  ❎atoi
 
 - Additional functions:
   ❎calloc
