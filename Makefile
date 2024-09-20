@@ -36,6 +36,9 @@ ft_isprint: $(DIR_LIB_FUN)/isprint/test
 .PHONY: ft_isalnum
 ft_isalnum: $(DIR_LIB_FUN)/isalnum/test
 
+.PHONY: ft_isdigit
+ft_isdigit: $(DIR_LIB_FUN)/isdigit/test
+
 .PHONY: Libc_functions
 Libc_functions: $(patsubst %/test.c,%/test,$(wildcard $(DIR_LIB_FUN)/*/test.c))
 
