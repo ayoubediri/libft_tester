@@ -14,20 +14,20 @@
 int test0()
 {
 	printf(YELLOW "==============================================\n" RESET);	
-	printf(YELLOW "=                  ft_strrchr                =\n" RESET);
+	printf(YELLOW "=                  ft_strchr                 =\n" RESET);
 	printf(YELLOW "==============================================\n\n" RESET);
 	printf("[+] THE TEST NUMBER : 0 !!\n");
-	char *test_a = "145648132148456325615131234";
+	char test_a[] = "145648132148456325615131234";
 	char test_b = '5';
 	printf("[+] WATH WE HAVE :"); 
 	printf(HEAVENLY "str : [%s]  | to_find : [%c]\n" RESET, test_a, test_b);
-	char *res = strrchr(test_a, test_b) ;
+	char *res = strchr(test_a, test_b) ;
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %s\n" RESET, res);
-	char *y_res = ft_strrchr(test_a, test_b); 
+	char *y_res = ft_strchr(test_a, test_b); 
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %s\n\n" RESET, y_res);
-	if (strcmp(res, res) == 0)
+	if ((res == y_res) || (strcmp(res, y_res) == 0))
 	{
 		printf(GREEN "THE TEST [ PASS ] ╰(*-*)╯  GOOD JOB !!\n\n" RESET);
 		return (1);
@@ -41,20 +41,20 @@ int test0()
 int test1()
 {
 	printf(YELLOW "==============================================\n" RESET);	
-	printf(YELLOW "=                  ft_strrchr                =\n" RESET);
+	printf(YELLOW "=                  ft_strchr                 =\n" RESET);
 	printf(YELLOW "==============================================\n\n" RESET);
 	printf("[+] THE TEST NUMBER : 1 !!\n");
-	char *test_a = "10234";
-	char test_b = '1';
+	char test_a[] = "10234";
+	char test_b = '2';
 	printf("[+] WATH WE HAVE :"); 
 	printf(HEAVENLY "str : [%s]  | to_find : [%c]\n" RESET, test_a, test_b);
-	char *res = strrchr(test_a, test_b);
+	char *res = strchr(test_a, test_b);
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %s\n" RESET, res);
-	char *y_res = ft_strrchr(test_a, test_b);
+	char *y_res = ft_strchr(test_a, test_b);
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %s\n\n" RESET, y_res);
-	if (strcmp(res, res) == 0)
+	if ((res == y_res) || (strcmp(res, y_res) == 0))
 	{
 		printf(GREEN "THE TEST [ PASS ] ╰(*-*)╯  GOOD JOB !!\n\n" RESET);
 		return (1);
@@ -67,20 +67,20 @@ int test1()
 int test2()
 {
 	printf(YELLOW "==============================================\n" RESET);	
-	printf(YELLOW "=                  ft_strrchr                =\n" RESET);
+	printf(YELLOW "=                  ft_strchr                 =\n" RESET);
 	printf(YELLOW "==============================================\n\n" RESET);
 	printf("[+] THE TEST NUMBER : 2 !!\n");
-	char *test_a = "1234";
+	char test_a[] = "1234";
 	char test_b = '0';
 	printf("[+] WATH WE HAVE :");
 	printf(HEAVENLY "str : [%s]  | to_find : [%c]\n" RESET, test_a, test_b);
-	char *res = strrchr(test_a, test_b);
+	char *res = strchr(test_a, test_b);
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %s\n" RESET, res);
-	char *y_res = ft_strrchr(test_a, test_b);
+	char *y_res = ft_strchr(test_a, test_b);
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %s\n\n" RESET, y_res);
-	if (strcmp(res, res) == 0)
+	if ((res == y_res) || ((res == y_res) || (strcmp(res, y_res) == 0)))
 	{
 		printf(GREEN "THE TEST [ PASS ] ╰(*-*)╯  GOOD JOB !!\n\n" RESET);
 		return (1);
@@ -93,20 +93,20 @@ int test2()
 int test3()
 {
 	printf(YELLOW "==============================================\n" RESET);	
-	printf(YELLOW "=                  ft_strrchr                =\n" RESET);
+	printf(YELLOW "=                  ft_strchr                 =\n" RESET);
 	printf(YELLOW "==============================================\n\n" RESET);
 	printf("[+] THE TEST NUMBER : 3 !!\n");
-	char *test_a = "1234";
+	char test_a[] = "1234";
 	char test_b = '\0';
 	printf("[+] WATH WE HAVE :");
 	printf(HEAVENLY "str : [%s]  | to_find : [%c]\n" RESET, test_a, test_b);
-	char *res = strrchr(test_a, test_b);
+	char *res = strchr(test_a, test_b);
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %s\n" RESET, res);
-	char *y_res = ft_strrchr(test_a, test_b);
+	char *y_res = ft_strchr(test_a, test_b);
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %s\n\n" RESET, y_res);
-	if (strcmp(res, res) == 0)
+	if ((res == y_res) || (strcmp(res, y_res) == 0))
 	{
 		printf(GREEN "THE TEST [ PASS ] ╰(*-*)╯  GOOD JOB !!\n\n" RESET);
 		return (1);
@@ -119,20 +119,20 @@ int test3()
 int test4()
 {
 	printf(YELLOW "==============================================\n" RESET);	
-	printf(YELLOW "=                  ft_strrchr                =\n" RESET);
+	printf(YELLOW "=                  ft_strchr                 =\n" RESET);
 	printf(YELLOW "==============================================\n\n" RESET);
 	printf("[+] THE TEST NUMBER : 4 !!\n");
-	char *test_a = "abdefg";
+	char test_a[] = "abdefg";
 	char test_b = '5';
 	printf("[+] WATH WE HAVE :");
 	printf(HEAVENLY "str : [%s]  | to_find : [%c]\n" RESET, test_a, test_b);
-	char *res = strrchr(test_a, test_b);
+	char *res = strchr(test_a, test_b);
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %s\n" RESET, res);
-	char *y_res = ft_strrchr(test_a, test_b);
+	char *y_res = ft_strchr(test_a, test_b);
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %s\n\n" RESET, y_res);
-	if (strcmp(res, res) == 0)
+	if ((res == y_res) || (strcmp(res, y_res) == 0))
 	{
 		printf(GREEN "THE TEST [ PASS ] ╰(*-*)╯  GOOD JOB !!\n\n" RESET);
 		return (1);
@@ -145,20 +145,20 @@ int test4()
 int test5()
 {
 	printf(YELLOW "==============================================\n" RESET);	
-	printf(YELLOW "=                  ft_strrchr                =\n" RESET);
+	printf(YELLOW "=                  ft_strchr                 =\n" RESET);
 	printf(YELLOW "==============================================\n\n" RESET);
 	printf("[+] THE TEST NUMBER : 5 !!\n");
-	char *test_a = "he what are u doing *-*";
+	char test_a[] = "he what are u doing *-*";
 	char test_b = ' ';
 	printf("[+] WATH WE HAVE :");
 	printf(HEAVENLY "str : [%s]  | to_find : [%c]\n" RESET, test_a, test_b);
-	char *res = strrchr(test_a, test_b);
+	char *res = strchr(test_a, test_b);
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %s\n" RESET, res);
-	char *y_res = ft_strrchr(test_a, test_b);
+	char *y_res = ft_strchr(test_a, test_b);
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %s\n\n" RESET, y_res);
-	if (strcmp(res, res) == 0)
+	if ((res == y_res) || (strcmp(res, y_res) == 0))
 	{
 		printf(GREEN "THE TEST [ PASS ] ╰(*-*)╯  GOOD JOB !!\n\n" RESET);
 		return (1);
@@ -171,20 +171,20 @@ int test5()
 int test6()
 {
 	printf(YELLOW "==============================================\n" RESET);	
-	printf(YELLOW "=                  ft_strrchr                =\n" RESET);
+	printf(YELLOW "=                  ft_strchr                 =\n" RESET);
 	printf(YELLOW "==============================================\n\n" RESET);
 	printf("[+] THE TEST NUMBER : 6 !!\n");
-	char *test_a = "good work bro !!";
+	char test_a[] = "good work bro !!";
 	char test_b = 'w';
 	printf("[+] WATH WE HAVE :");
 	printf(HEAVENLY "str : [%s]  | to_find : [%c]\n" RESET, test_a, test_b);
-	char *res = strrchr(test_a, test_b);
+	char *res = strchr(test_a, test_b);
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %s\n" RESET, res);
-	char *y_res = ft_strrchr(test_a, test_b);
+	char *y_res = ft_strchr(test_a, test_b);
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %s\n\n" RESET, y_res);
-	if (strcmp(res, res) == 0)
+	if ((res == y_res) || (strcmp(res, y_res) == 0))
 	{
 		printf(GREEN "THE TEST [ PASS ] ╰(*-*)╯  GOOD JOB !!\n\n" RESET);
 		return (1);
@@ -197,20 +197,20 @@ int test6()
 int test7()
 {
 	printf(YELLOW "==============================================\n" RESET);	
-	printf(YELLOW "=                  ft_strrchr                =\n" RESET);
+	printf(YELLOW "=                  ft_strchr                 =\n" RESET);
 	printf(YELLOW "==============================================\n\n" RESET);
 	printf("[+] THE TEST NUMBER : 7 !!\n");
-	char *test_a = "hi good\x4programmer";
+	char test_a[] = "hi good\x4programmer";
 	char test_b = '\x4';
 	printf("[+] WATH WE HAVE :");
 	printf(HEAVENLY "str : [%s]  | to_find : [%c]\n" RESET, test_a, test_b);
-	char *res = strrchr(test_a, test_b);
+	char *res = strchr(test_a, test_b);
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %s\n" RESET, res);
-	char *y_res = ft_strrchr(test_a, test_b);
+	char *y_res = ft_strchr(test_a, test_b);
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %s\n\n" RESET, y_res);
-	if (strcmp(res, res) == 0)
+	if ((res == y_res) || (strcmp(res, y_res) == 0))
 	{
 		printf(GREEN "THE TEST [ PASS ] ╰(*-*)╯  GOOD JOB !!\n\n" RESET);
 		return (1);
@@ -223,20 +223,20 @@ int test7()
 int test8()
 {
 	printf(YELLOW "==============================================\n" RESET);	
-	printf(YELLOW "=                  ft_strrchr                =\n" RESET);
+	printf(YELLOW "=                  ft_strchr                 =\n" RESET);
 	printf(YELLOW "==============================================\n\n" RESET);
 	printf("[+] THE TEST NUMBER : 8 !!\n");
-	char *test_a = "121314a115a1167da15zad819";
+	char test_a[] = "121314a115a1167da15zad819";
 	char test_b = 'a';
 	printf("[+] WATH WE HAVE :");
 	printf(HEAVENLY "str : [%s]  | to_find : [%c]\n" RESET, test_a, test_b);
-	char *res = strrchr(test_a, test_b);
+	char *res = strchr(test_a, test_b);
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %s\n" RESET, res);
-	char *y_res = ft_strrchr(test_a, test_b);
+	char *y_res = ft_strchr(test_a, test_b);
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %s\n\n" RESET, y_res);
-	if (strcmp(res, res) == 0)
+	if ((res == y_res) || (strcmp(res, y_res) == 0))
 	{
 		printf(GREEN "THE TEST [ PASS ] ╰(*-*)╯  GOOD JOB !!\n\n" RESET);
 		return (1);
@@ -248,20 +248,20 @@ int test8()
 int test9()
 {
 	printf(YELLOW "==============================================\n" RESET);	
-	printf(YELLOW "=                  ft_strrchr                =\n" RESET);
+	printf(YELLOW "=                  ft_strchr                 =\n" RESET);
 	printf(YELLOW "==============================================\n\n" RESET);
 	printf("[+] THE TEST NUMBER : 9 !!\n");
-	char *test_a = "+-+-+-+-+0-0----";
+	char test_a[] = "+-+-+-+-+0-0----";
 	char test_b = '+';
 	printf("[+] WATH WE HAVE :");
 	printf(HEAVENLY "str : [%s]  | to_find : [%c]\n" RESET, test_a, test_b);
-	char *res = strrchr(test_a, test_b);
+	char *res = strchr(test_a, test_b);
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %s\n" RESET, res);
-	char *y_res = ft_strrchr(test_a, test_b);
+	char *y_res = ft_strchr(test_a, test_b);
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %s\n\n" RESET, y_res);
-	if (strcmp(res, res) == 0)
+	if ((res == y_res) || (strcmp(res, y_res) == 0))
 	{
 		printf(GREEN "THE TEST [ PASS ] ╰(*-*)╯  GOOD JOB !!\n\n" RESET);
 		return (1);
@@ -273,20 +273,20 @@ int test9()
 int test10()
 {
 	printf(YELLOW "==============================================\n" RESET);	
-	printf(YELLOW "=                  ft_strrchr                =\n" RESET);
+	printf(YELLOW "=                  ft_strchr                 =\n" RESET);
 	printf(YELLOW "==============================================\n\n" RESET);
 	printf("[+] THE TEST NUMBER : 10 !!\n");
-	char *test_a = "";
+	char test_a[] = "";
 	char test_b = '0';
 	printf("[+] WATH WE HAVE :");
 	printf(HEAVENLY "str : [%s]  | to_find : [%c]\n" RESET, test_a, test_b);
-	char *res = strrchr(test_a, test_b);
+	char *res = strchr(test_a, test_b);
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %s\n" RESET, res);
-	char *y_res = ft_strrchr(test_a, test_b);
+	char *y_res = ft_strchr(test_a, test_b);
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %s\n\n" RESET, y_res);
-	if (strcmp(res, res) == 0)
+	if ((res == y_res) || (strcmp(res, y_res) == 0))
 	{
 		printf(GREEN "THE TEST [ PASS ] ╰(*-*)╯  GOOD JOB !!\n\n" RESET);
 		return (1);
@@ -299,20 +299,20 @@ int test10()
 int test11()
 {
 	printf(YELLOW "==============================================\n" RESET);	
-	printf(YELLOW "=                  ft_strrchr                =\n" RESET);
+	printf(YELLOW "=                  ft_strchr                 =\n" RESET);
 	printf(YELLOW "==============================================\n\n" RESET);
 	printf("[+] THE TEST NUMBER : 11 !!\n");
-	char *test_a = "0";
+	char test_a[] = "0";
 	char test_b = -1;
 	printf("[+] WATH WE HAVE :");
-	printf(HEAVENLY "str : [%s]  | to_find : [%c]\n" RESET, test_a, test_b);
-	char *res = strrchr(test_a, test_b);
+	printf(HEAVENLY "str : [%s]  | to_find : [%d] (in intger form)\n" RESET, test_a, test_b);
+	char *res = strchr(test_a, test_b);
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %s\n" RESET, res);
-	char *y_res = ft_strrchr(test_a, test_b);
+	char *y_res = ft_strchr(test_a, test_b);
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %s\n\n" RESET, y_res);
-	if (strcmp(res, res) == 0)
+	if ((res == y_res) || (strcmp(res, y_res) == 0))
 	{
 		printf(GREEN "THE TEST [ PASS ] ╰(*-*)╯  GOOD JOB !!\n\n" RESET);
 		return (1);
