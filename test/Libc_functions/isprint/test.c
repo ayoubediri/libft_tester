@@ -6,7 +6,7 @@
 /*   By: ayoub <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/20 20:49:44 by ayoub             #+#    #+#             */
-/*   Updated: 2024/09/20 20:50:49 by ayoub            ###   ########.fr       */
+/*   Updated: 2024/09/21 17:02:25 by ayoub            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -203,6 +203,6 @@ int main()
 	((t2 == 0)? printf(RED "TEST2" RESET " , ") : printf(GREEN "TEST2" RESET " , "));
 	((t3 == 0)? printf(RED "TEST3" RESET " , ") : printf(GREEN "TEST3" RESET " , "));
 	((t4 == 0)? printf(RED "TEST4" RESET " , ") : printf(GREEN "TEST4" RESET " , "));
-	((t5 == 0)? printf(RED "TEST5" RESET " , ") : printf(GREEN "TEST5" RESET ".\n"));
+	((t5 == 0)? printf(RED "TEST5" RESET ".\n") : printf(GREEN "TEST5" RESET ".\n"));
 	printf(PERPUL "==============================================\n\n" RESET);
 }

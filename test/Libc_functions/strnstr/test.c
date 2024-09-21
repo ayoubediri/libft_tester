@@ -43,7 +43,7 @@ int test0()
 	char *y_res = ft_strnstr(test_a, test_b, n); 
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %s\n\n" RESET, y_res);
-	if (strcmp(res, res) == 0)
+	if (strcmp(res, y_res) == 0)
 	{
 		printf(GREEN "THE TEST [ PASS ] ╰(*-*)╯  GOOD JOB !!\n\n" RESET);
 		return (1);
@@ -71,7 +71,7 @@ int test1()
 	char *y_res = ft_strnstr(test_a, test_b, n);
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %s\n\n" RESET, y_res);
-	if (strcmp(res, res) == 0)
+	if (strcmp(res, y_res) == 0)
 	{
 		printf(GREEN "THE TEST [ PASS ] ╰(*-*)╯  GOOD JOB !!\n\n" RESET);
 		return (1);
@@ -98,7 +98,7 @@ int test2()
 	char *y_res = ft_strnstr(test_a, test_b, n);
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %s\n\n" RESET, y_res);
-	if (strcmp(res, res) == 0)
+	if (strcmp(res, y_res) == 0)
 	{
 		printf(GREEN "THE TEST [ PASS ] ╰(*-*)╯  GOOD JOB !!\n\n" RESET);
 		return (1);
@@ -119,13 +119,13 @@ int test3()
 	unsigned int n = 6;
 	printf("[+] WATH WE HAVE :"); 
 	printf(HEAVENLY "str : [%s]  | to_find : [%s] | n : [%d]\n" RESET, test_a, test_b, n);
-	char *res = NULL;//strnstr(test_a, test_b, n);
+	char *res = strnstr(test_a, test_b, n);
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %s\n" RESET, res);
 	char *y_res = ft_strnstr(test_a, test_b, n);
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %s\n\n" RESET, y_res);
-	if (strcmp(res, res) == 0)
+	if (strcmp(res, y_res) == 0)
 	{
 		printf(GREEN "THE TEST [ PASS ] ╰(*-*)╯  GOOD JOB !!\n\n" RESET);
 		return (1);
@@ -152,7 +152,7 @@ int test4()
 	char *y_res = ft_strnstr(test_a, test_b, n);
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %s\n\n" RESET, y_res);
-	if (strcmp(res, res) == 0)
+	if (strcmp(res, y_res) == 0)
 	{
 		printf(GREEN "THE TEST [ PASS ] ╰(*-*)╯  GOOD JOB !!\n\n" RESET);
 		return (1);
@@ -179,7 +179,7 @@ int test5()
 	char *y_res = ft_strnstr(test_a, test_b, n);
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %s\n\n" RESET, y_res);
-	if (strcmp(res, res) == 0)
+	if (strcmp(res, y_res) == 0)
 	{
 		printf(GREEN "THE TEST [ PASS ] ╰(*-*)╯  GOOD JOB !!\n\n" RESET);
 		return (1);
@@ -206,7 +206,7 @@ int test6()
 	char *y_res = ft_strnstr(test_a, test_b, n);
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %s\n\n" RESET, y_res);
-	if (strcmp(res, res) == 0)
+	if (strcmp(res, y_res) == 0)
 	{
 		printf(GREEN "THE TEST [ PASS ] ╰(*-*)╯  GOOD JOB !!\n\n" RESET);
 		return (1);
@@ -233,7 +233,7 @@ int test7()
 	char *y_res = ft_strnstr(test_a, test_b, n);
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %s\n\n" RESET, y_res);
-	if (strcmp(res, res) == 0)
+	if (strcmp(res, y_res) == 0)
 	{
 		printf(GREEN "THE TEST [ PASS ] ╰(*-*)╯  GOOD JOB !!\n\n" RESET);
 		return (1);
@@ -260,7 +260,7 @@ int test8()
 	char *y_res = ft_strnstr(test_a, test_b, n);
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %s\n\n" RESET, y_res);
-	if (strcmp(res, res) == 0)
+	if (strcmp(res, y_res) == 0)
 	{
 		printf(GREEN "THE TEST [ PASS ] ╰(*-*)╯  GOOD JOB !!\n\n" RESET);
 		return (1);
@@ -286,7 +286,7 @@ int test9()
 	char *y_res = ft_strnstr(test_a, test_b, n);
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %s\n\n" RESET, y_res);
-	if (strcmp(res, res) == 0)
+	if (strcmp(res, y_res) == 0)
 	{
 		printf(GREEN "THE TEST [ PASS ] ╰(*-*)╯  GOOD JOB !!\n\n" RESET);
 		return (1);
@@ -312,7 +312,7 @@ int test10()
 	char *y_res = ft_strnstr(test_a, test_b, n);
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %s\n\n" RESET, y_res);
-	if (strcmp(res, res) == 0)
+	if (strcmp(res, y_res) == 0)
 	{
 		printf(GREEN "THE TEST [ PASS ] ╰(*-*)╯  GOOD JOB !!\n\n" RESET);
 		return (1);
@@ -339,7 +339,7 @@ int test11()
 	char *y_res = ft_strnstr(test_a, test_b, n);
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %s\n\n" RESET, y_res);
-	if (strcmp(res, res) == 0)
+	if (strcmp(res, y_res) == 0)
 	{
 		printf(GREEN "THE TEST [ PASS ] ╰(*-*)╯  GOOD JOB !!\n\n" RESET);
 		return (1);
@@ -401,6 +401,6 @@ int main()
 	((t8 == 0)? printf(RED "TEST8" RESET " , ") : printf(GREEN "TEST8" RESET " , "));
 	((t9 == 0)? printf(RED "TEST9" RESET " , ") : printf(GREEN "TEST9" RESET " , "));
 	((t10 == 0)? printf(RED "TEST10" RESET " , ") : printf(GREEN "TEST10" RESET " , "));
-	((t11 == 0)? printf(RED "TEST11" RESET " , ") : printf(GREEN "TEST11" RESET ".\n"));
+	((t11 == 0)? printf(RED "TEST11" RESET ".\n") : printf(GREEN "TEST11" RESET ".\n"));
 	printf(PERPUL "==============================================\n\n" RESET);
 }

@@ -385,6 +385,6 @@ int main()
 	((t8 == 0)? printf(RED "TEST8" RESET " , ") : printf(GREEN "TEST8" RESET " , "));
 	((t9 == 0)? printf(RED "TEST9" RESET " , ") : printf(GREEN "TEST9" RESET " , "));
 	((t10 == 0)? printf(RED "TEST10" RESET " , ") : printf(GREEN "TEST10" RESET " , "));
-	((t11 == 0)? printf(RED "TEST11" RESET " , ") : printf(GREEN "TEST11" RESET ".\n"));
+	((t11 == 0)? printf(RED "TEST11" RESET ".\n") : printf(GREEN "TEST11" RESET ".\n"));
 	printf(PERPUL "==============================================\n\n" RESET);
 }

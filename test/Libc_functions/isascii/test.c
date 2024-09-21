@@ -192,6 +192,6 @@ int main()
 	((t2 == 0)? printf(RED "TEST2" RESET " , ") : printf(GREEN "TEST2" RESET " , "));
 	((t3 == 0)? printf(RED "TEST3" RESET " , ") : printf(GREEN "TEST3" RESET " , "));
 	((t4 == 0)? printf(RED "TEST4" RESET " , ") : printf(GREEN "TEST4" RESET " , "));
-	((t5 == 0)? printf(RED "TEST5" RESET " , ") : printf(GREEN "TEST5" RESET ".\n"));
+	((t5 == 0)? printf(RED "TEST5" RESET ".\n") : printf(GREEN "TEST5" RESET ".\n"));
 	printf(PERPUL "==============================================\n\n" RESET);
 }
