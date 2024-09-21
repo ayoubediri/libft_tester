@@ -45,6 +45,9 @@ ft_isdigit: $(DIR_LIB_FUN)/isdigit/test
 .PHONY: ft_atoi
 ft_atoi: $(DIR_LIB_FUN)/atoi/test
 
+.PHONY: ft_strncmp
+ft_strncmp: $(DIR_LIB_FUN)/strncmp/test
+
 .PHONY: Libc_functions
 Libc_functions: $(patsubst %/test.c,%/test,$(wildcard $(DIR_LIB_FUN)/*/test.c))
 

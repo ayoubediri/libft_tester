@@ -13,16 +13,18 @@
 int test0()
 {
 	printf(YELLOW "==============================================\n" RESET);	
-	printf(YELLOW "=                 ft_isalnum                 =\n" RESET);
+	printf(YELLOW "=                  ft_strncmp                =\n" RESET);
 	printf(YELLOW "==============================================\n\n" RESET);
 	printf("[+] THE TEST NUMBER : 0 !!\n");
-	int test = '0';
+	char *test_a = "1234";
+	char *test_b = "1234";
+	unsigned int n = 4;
 	printf("[+] WATH WE HAVE :"); 
-	printf(HEAVENLY " %c\n" RESET, test);
-	int res = isalnum(test) != 0 ;
+	printf(HEAVENLY "s1 : [%s]  | s2 : [%s] | n : [%d]\n" RESET, test_a, test_b, n);
+	int res = strncmp(test_a, test_b, n) ;
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %d\n" RESET, res);
-	int y_res = ft_isalnum(test) != 0; 
+	int y_res = ft_strncmp(test_a, test_b, n); 
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %d\n\n" RESET, y_res);
 	if (y_res == res)
@@ -39,16 +41,18 @@ int test0()
 int test1()
 {
 	printf(YELLOW "==============================================\n" RESET);	
-	printf(YELLOW "=                 ft_isalnum                 =\n" RESET);
+	printf(YELLOW "=                  ft_strncmp                =\n" RESET);
 	printf(YELLOW "==============================================\n\n" RESET);
 	printf("[+] THE TEST NUMBER : 1 !!\n");
-	int test = '0' - 1;
+	char *test_a = "1234";
+	char *test_b = "1234";
+	unsigned int n = 3;
 	printf("[+] WATH WE HAVE :"); 
-	printf(HEAVENLY " %c \n" RESET, test);
-	int res = isalnum(test) != 0;
+	printf(HEAVENLY "s1 : [%s]  | s2 : [%s] | n : [%d]\n" RESET, test_a, test_b, n);
+	int res = strncmp(test_a, test_b, n);
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %d\n" RESET, res);
-	int y_res = ft_isalnum(test) != 0;
+	int y_res = ft_strncmp(test_a, test_b, n);
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %d\n\n" RESET, y_res);
 	if (y_res == res)
@@ -64,16 +68,18 @@ int test1()
 int test2()
 {
 	printf(YELLOW "==============================================\n" RESET);	
-	printf(YELLOW "=                 ft_isalnum                 =\n" RESET);
+	printf(YELLOW "=                  ft_strncmp                =\n" RESET);
 	printf(YELLOW "==============================================\n\n" RESET);
 	printf("[+] THE TEST NUMBER : 2 !!\n");
-	int test = '9';
+	char *test_a = "1234";
+	char *test_b = "1234";
+	unsigned int n = 5;
 	printf("[+] WATH WE HAVE :"); 
-	printf(HEAVENLY " %c \n" RESET, test);
-	int res = isalnum(test) != 0;
+	printf(HEAVENLY "s1 : [%s]  | s2 : [%s] | n : [%d]\n" RESET, test_a, test_b, n);
+	int res = strncmp(test_a, test_b, n);
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %d\n" RESET, res);
-	int y_res = ft_isalnum(test) != 0;
+	int y_res = ft_strncmp(test_a, test_b, n);
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %d\n\n" RESET, y_res);
 	if (y_res == res)
@@ -89,16 +95,18 @@ int test2()
 int test3()
 {
 	printf(YELLOW "==============================================\n" RESET);	
-	printf(YELLOW "=                 ft_isalnum                 =\n" RESET);
+	printf(YELLOW "=                  ft_strncmp                =\n" RESET);
 	printf(YELLOW "==============================================\n\n" RESET);
 	printf("[+] THE TEST NUMBER : 3 !!\n");
-	int test = '9' + 1;
+	char *test_a = "1234";
+	char *test_b = "1234";
+	unsigned int n = 6;
 	printf("[+] WATH WE HAVE :"); 
-	printf(HEAVENLY " %c \n" RESET, test);
-	int res = isalnum(test) != 0;
+	printf(HEAVENLY "s1 : [%s]  | s2 : [%s] | n : [%d]\n" RESET, test_a, test_b, n);
+	int res = strncmp(test_a, test_b, n);
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %d\n" RESET, res);
-	int y_res = ft_isalnum(test) != 0;
+	int y_res = ft_strncmp(test_a, test_b, n);
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %d\n\n" RESET, y_res);
 	if (y_res == res)
@@ -114,16 +122,18 @@ int test3()
 int test4()
 {
 	printf(YELLOW "==============================================\n" RESET);	
-	printf(YELLOW "=                 ft_isalnum                 =\n" RESET);
+	printf(YELLOW "=                  ft_strncmp                =\n" RESET);
 	printf(YELLOW "==============================================\n\n" RESET);
 	printf("[+] THE TEST NUMBER : 4 !!\n");
-	int test = 'a';
+	char *test_a = "abdefg";
+	char *test_b = "1234";
+	unsigned int n = 10;
 	printf("[+] WATH WE HAVE :"); 
-	printf(HEAVENLY " %c\n" RESET, test);
-	int res = isalnum(test) != 0;
+	printf(HEAVENLY "s1 : [%s]  | s2 : [%s] | n : [%d]\n" RESET, test_a, test_b, n);
+	int res = strncmp(test_a, test_b, n);
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %d\n" RESET, res);
-	int y_res = ft_isalnum(test) != 0;
+	int y_res = ft_strncmp(test_a, test_b, n);
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %d\n\n" RESET, y_res);
 	if (y_res == res)
@@ -139,16 +149,18 @@ int test4()
 int test5()
 {
 	printf(YELLOW "==============================================\n" RESET);	
-	printf(YELLOW "=                 ft_isalnum                 =\n" RESET);
+	printf(YELLOW "=                  ft_strncmp                =\n" RESET);
 	printf(YELLOW "==============================================\n\n" RESET);
 	printf("[+] THE TEST NUMBER : 5 !!\n");
-	int test = 'a' - 1;
+	char *test_a = "he what are u doing *-*";
+	char *test_b = "he what are you doing *-*";
+	unsigned int n = strlen(test_a);
 	printf("[+] WATH WE HAVE :"); 
-	printf(HEAVENLY " %c\n" RESET, test);
-	int res = isalnum(test) != 0;
+	printf(HEAVENLY "s1 : [%s]  | s2 : [%s] | n : [%d]\n" RESET, test_a, test_b, n);
+	int res = strncmp(test_a, test_b, n);
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %d\n" RESET, res);
-	int y_res = ft_isalnum(test) != 0;
+	int y_res = ft_strncmp(test_a, test_b, n);
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %d\n\n" RESET, y_res);
 	if (y_res == res)
@@ -164,16 +176,18 @@ int test5()
 int test6()
 {
 	printf(YELLOW "==============================================\n" RESET);	
-	printf(YELLOW "=                 ft_isalnum                 =\n" RESET);
+	printf(YELLOW "=                  ft_strncmp                =\n" RESET);
 	printf(YELLOW "==============================================\n\n" RESET);
 	printf("[+] THE TEST NUMBER : 6 !!\n");
-	int test = 'z';
+	char *test_a = "good work bro !!";
+	char *test_b = "good work bro !!";
+	unsigned int n = 0;
 	printf("[+] WATH WE HAVE :"); 
-	printf(HEAVENLY " %c\n" RESET, test);
-	int res = isalnum(test) != 0;
+	printf(HEAVENLY "s1 : [%s]  | s2 : [%s] | n : [%d]\n" RESET, test_a, test_b, n);
+	int res = strncmp(test_a, test_b, n);
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %d\n" RESET, res);
-	int y_res = ft_isalnum(test) != 0;
+	int y_res = ft_strncmp(test_a, test_b, n);
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %d\n\n" RESET, y_res);
 	if (y_res == res)
@@ -189,16 +203,18 @@ int test6()
 int test7()
 {
 	printf(YELLOW "==============================================\n" RESET);	
-	printf(YELLOW "=                 ft_isalnum                 =\n" RESET);
+	printf(YELLOW "=                  ft_strncmp                =\n" RESET);
 	printf(YELLOW "==============================================\n\n" RESET);
 	printf("[+] THE TEST NUMBER : 7 !!\n");
-	int test = 'z' + 1;
+	char *test_a = "hi good\x4programmer";
+	char *test_b = "hi good\x1programmer";
+	unsigned int n = strlen(test_a);
 	printf("[+] WATH WE HAVE :"); 
-	printf(HEAVENLY " %c\n" RESET, test);
-	int res = isalnum(test) != 0;
+	printf(HEAVENLY "s1 : [%s]  | s2 : [%s] | n : [%d]\n" RESET, test_a, test_b, n);
+	int res = strncmp(test_a, test_b, n);
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %d\n" RESET, res);
-	int y_res = ft_isalnum(test) != 0;
+	int y_res = ft_strncmp(test_a, test_b, n);
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %d\n\n" RESET, y_res);
 	if (y_res == res)
@@ -214,16 +230,18 @@ int test7()
 int test8()
 {
 	printf(YELLOW "==============================================\n" RESET);	
-	printf(YELLOW "=                 ft_isalnum                 =\n" RESET);
+	printf(YELLOW "=                  ft_strncmp                =\n" RESET);
 	printf(YELLOW "==============================================\n\n" RESET);
 	printf("[+] THE TEST NUMBER : 8 !!\n");
-	int test = 'A';
+	char *test_a = "123456789";
+	char *test_b = "123465789";
+	unsigned int n = 10;
 	printf("[+] WATH WE HAVE :"); 
-	printf(HEAVENLY " %c\n" RESET, test);
-	int res = isalnum(test) != 0;
+	printf(HEAVENLY "s1 : [%s]  | s2 : [%s] | n : [%d]\n" RESET, test_a, test_b, n);
+	int res = strncmp(test_a, test_b, n);
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %d\n" RESET, res);
-	int y_res = ft_isalnum(test) != 0;
+	int y_res = ft_strncmp(test_a, test_b, n);
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %d\n\n" RESET, y_res);
 	if (y_res == res)
@@ -238,16 +256,18 @@ int test8()
 int test9()
 {
 	printf(YELLOW "==============================================\n" RESET);	
-	printf(YELLOW "=                 ft_isalnum                 =\n" RESET);
+	printf(YELLOW "=                  ft_strncmp                =\n" RESET);
 	printf(YELLOW "==============================================\n\n" RESET);
 	printf("[+] THE TEST NUMBER : 9 !!\n");
-	int test = 'A' - 1;
+	char *test_a = "123456987";
+	char *test_b = "12346987";
+	unsigned int n = 5;
 	printf("[+] WATH WE HAVE :"); 
-	printf(HEAVENLY " %c\n" RESET, test);
-	int res = isalnum(test) != 0;
+	printf(HEAVENLY "s1 : [%s]  | s2 : [%s] | n : [%d]\n" RESET, test_a, test_b, n);
+	int res = strncmp(test_a, test_b, n);
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %d\n" RESET, res);
-	int y_res = ft_isalnum(test) != 0;
+	int y_res = ft_strncmp(test_a, test_b, n);
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %d\n\n" RESET, y_res);
 	if (y_res == res)
@@ -262,16 +282,18 @@ int test9()
 int test10()
 {
 	printf(YELLOW "==============================================\n" RESET);	
-	printf(YELLOW "=                 ft_isalnum                 =\n" RESET);
+	printf(YELLOW "=                  ft_strncmp                =\n" RESET);
 	printf(YELLOW "==============================================\n\n" RESET);
 	printf("[+] THE TEST NUMBER : 10 !!\n");
-	int test = 'Z';
+	char *test_a = "";
+	char *test_b = "1234";
+	unsigned int n = 5;
 	printf("[+] WATH WE HAVE :"); 
-	printf(HEAVENLY " %c\n" RESET, test);
-	int res = isalnum(test) != 0;
+	printf(HEAVENLY "s1 : [%s]  | s2 : [%s] | n : [%d]\n" RESET, test_a, test_b, n);
+	int res = strncmp(test_a, test_b, n);
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %d\n" RESET, res);
-	int y_res = ft_isalnum(test) != 0;
+	int y_res = ft_strncmp(test_a, test_b, n);
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %d\n\n" RESET, y_res);
 	if (y_res == res)
@@ -287,16 +309,18 @@ int test10()
 int test11()
 {
 	printf(YELLOW "==============================================\n" RESET);	
-	printf(YELLOW "=                 ft_isalnum                 =\n" RESET);
+	printf(YELLOW "=                  ft_strncmp                =\n" RESET);
 	printf(YELLOW "==============================================\n\n" RESET);
 	printf("[+] THE TEST NUMBER : 11 !!\n");
-	int test = 'Z' + 1;
+	char *test_a = "";
+	char *test_b = "";
+	unsigned int n = 100;
 	printf("[+] WATH WE HAVE :"); 
-	printf(HEAVENLY " %c\n" RESET, test);
-	int res = isalnum(test) != 0;
+	printf(HEAVENLY "s1 : [%s]  | s2 : [%s] | n : [%d]\n" RESET, test_a, test_b, n);
+	int res = strncmp(test_a, test_b, n);
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %d\n" RESET, res);
-	int y_res = ft_isalnum(test) != 0;
+	int y_res = ft_strncmp(test_a, test_b, n);
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %d\n\n" RESET, y_res);
 	if (y_res == res)

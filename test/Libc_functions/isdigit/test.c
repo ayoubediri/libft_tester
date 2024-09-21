@@ -341,12 +341,12 @@ int main()
 	printf(PERPUL "==============================================\n" RESET);
 	if (c == 12)
 	{
-		printf(GREEN "THE RESULTE IS : [%d/6]\n",c);
+		printf(GREEN "THE RESULTE IS : [%d/12]\n",c);
 		printf("CONGRATULATIONS, YOU HAVE PASSED ALL THE TESTS.\n" RESET);
 	}
 	else
 	{
-		printf(RED "THE RESULTE IS : [%d/6]\n",c);
+		printf(RED "THE RESULTE IS : [%d/12]\n",c);
 		printf("UNFORTUNATELY, YOUR FUNCTION DID NOT MEET ALL THE TESTS. TRY AGAIN.\n" RESET);
 	}
 	printf(HEAVENLY "ALL TEST : " RESET);
