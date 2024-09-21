@@ -48,6 +48,7 @@ make Bonus_functions
   🆗strncmp
   🆗strnstr
   🆗strrchr
+  🆗strchr
   ❎memset
   ❎bzero
   ❎memcpy
@@ -58,7 +59,6 @@ make Bonus_functions
   ❎strlen
   ❎strlcpy
   ❎strlcat
-  ❎strchr
 
 - Additional functions:
   ❎calloc
