@@ -39,6 +39,12 @@ ft_isprint: $(DIR_LIB_FUN)/isprint/test
 .PHONY: ft_strlcat
 ft_strlcat: $(DIR_LIB_FUN)/strlcat/test
 
+.PHONY: ft_strlcpy
+ft_strlcpy: $(DIR_LIB_FUN)/strlcpy/test
+
+.PHONY: ft_strlen
+ft_strlen: $(DIR_LIB_FUN)/strlen/test
+
 .PHONY: ft_isalnum
 ft_isalnum: $(DIR_LIB_FUN)/isalnum/test
 
