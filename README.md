@@ -2,27 +2,27 @@
 tester for libft 42 project
 # HOW TO USE THE PROJECTE:
 
-1- first you shoulde copy this in your terminal:
+1- first you should copy this in your terminal:
 ```
 git clone https://github.com/ayoubediri/libft_tester.git
 ```
-2- after that you shoulde copy your libft.a file and libft.h file in src dirctory
+2- after that you should copy your libft.a file and libft.h file in src directory
 ```
 cp your_path_libft.a src/.
 cp your_path_libft.h src/.
 ```
 that all.
 
-after you do the step 2 you can test all your functions by useing this commend :
+after you do the step 2 you can test all your functions by using this command :
 ```
 make test_all
 ```
-or you can spcifice one target function by her name :
-- exmple :
+or you can specify one target function by her name :
+- example :
 ```
 make ft_tolower
 ```
-or you can spcifice one part of the project by this tree commned :
+or you can specific one part of the project by this three command :
 - for Libc functions part:
 ```
 make Libc_functions
@@ -46,6 +46,7 @@ make Bonus_functions
   🆗isalpha
   🆗atoi
   🆗strncmp
+  🆗strnstr
   ❎memset
   ❎bzero
   ❎memcpy
@@ -58,7 +59,6 @@ make Bonus_functions
   ❎strlcat
   ❎strchr
   ❎strrchr
-  ❎strnstr
 
 - Additional functions:
   ❎calloc
