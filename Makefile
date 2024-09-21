@@ -39,6 +39,9 @@ ft_isprint: $(DIR_LIB_FUN)/isprint/test
 .PHONY: ft_isalnum
 ft_isalnum: $(DIR_LIB_FUN)/isalnum/test
 
+.PHONY: ft_strnstr
+ft_strnstr: $(DIR_LIB_FUN)/strnstr/test
+
 .PHONY: ft_isdigit
 ft_isdigit: $(DIR_LIB_FUN)/isdigit/test
 
