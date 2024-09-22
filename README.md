@@ -50,15 +50,17 @@ make Bonus_functions
   🆗strrchr
   🆗strchr
   🆗strlcat
-  ❎memset
-  ❎bzero
-  ❎memcpy
+  🆗strlcpy
+  🆗strlen
+  🆗memset
+  🆗bzero
+  🆗memcpy
   ❎memccpy
   ❎memmove
   ❎memchr
   ❎memcmp
-  ❎strlen
-  ❎strlcpy
+  
+  
 
 - Additional functions:
   ❎calloc
