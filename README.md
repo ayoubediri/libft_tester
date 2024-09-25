@@ -55,7 +55,7 @@ make Bonus_functions
   🆗memset
   🆗bzero
   🆗memcpy
-  ❎memccpy
+  🆗memccpy
   ❎memmove
   ❎memchr
   ❎memcmp
