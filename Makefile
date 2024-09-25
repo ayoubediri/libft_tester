@@ -57,6 +57,9 @@ ft_strlcpy: $(DIR_LIB_FUN)/strlcpy/test
 .PHONY: ft_strlen
 ft_strlen: $(DIR_LIB_FUN)/strlen/test
 
+.PHONY: ft_memmove
+ft_memmove: $(DIR_LIB_FUN)/memmove/test
+
 .PHONY: ft_isalnum
 ft_isalnum: $(DIR_LIB_FUN)/isalnum/test
 
