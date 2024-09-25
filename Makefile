@@ -39,6 +39,9 @@ ft_isprint: $(DIR_LIB_FUN)/isprint/test
 .PHONY: ft_strlcat
 ft_strlcat: $(DIR_LIB_FUN)/strlcat/test
 
+.PHONY: ft_memccpy
+ft_memccpy: $(DIR_LIB_FUN)/memccpy/test
+
 .PHONY: ft_memcpy
 ft_memcpy: $(DIR_LIB_FUN)/memcpy/test
 
