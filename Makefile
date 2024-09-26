@@ -75,6 +75,9 @@ ft_strnstr: $(DIR_LIB_FUN)/strnstr/test
 .PHONY: ft_isdigit
 ft_isdigit: $(DIR_LIB_FUN)/isdigit/test
 
+.PHONY: ft_memcmp
+ft_memcmp: $(DIR_LIB_FUN)/memcmp/test
+
 .PHONY: ft_memchr
 ft_memchr: $(DIR_LIB_FUN)/memchr/test
 

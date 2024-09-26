@@ -58,7 +58,7 @@ make Bonus_functions
   🆗memccpy
   🆗memmove
   🆗memchr
-  ❎memcmp
+  🆗memcmp
   
   
 
