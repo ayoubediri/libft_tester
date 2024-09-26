@@ -12,12 +12,12 @@ $(DIR_LIB_FUN)/%/test: $(DIR_LIB_FUN)/%/test.c
 	@rm -f $@
 
 $(DIR_LIB_ADD)/%/test: $(DIR_LIB_ADD)/%/test.c
-	@$(CC) $(CFLAGS) $< $(LIB)
+	@$(CC) $(CFLAGS) $< $(LIB) -o $@
 	@./$@
 	@rm -f $@
 
 $(DIR_LIB_BON)/%/test: $(DIR_LIB_BON)/%/test.c
-	@$(CC) $(CFLAGS) $< $(LIB)
+	@$(CC) $(CFLAGS) $< $(LIB) -o $@
 	@./$@
 	@rm -f $@
 
@@ -87,11 +87,14 @@ ft_atoi: $(DIR_LIB_FUN)/atoi/test
 .PHONY: ft_strncmp
 ft_strncmp: $(DIR_LIB_FUN)/strncmp/test
 
+.PHONY: ft_strdup
+ft_strdup: $(DIR_LIB_ADD)/strdup/test
+
 .PHONY: Libc_functions
 Libc_functions: $(patsubst %/test.c,%/test,$(wildcard $(DIR_LIB_FUN)/*/test.c))
 
-.PHONY: additional_function
-additional_function: $(patsubst %/test.c,%/test,$(wildcard $(DIR_LIB_ADD)/*/test.c))
+.PHONY: Additional_functions
+Additional_functions: $(patsubst %/test.c,%/test,$(wildcard $(DIR_LIB_ADD)/*/test.c))
 
 .PHONY: bonus_function
 bonus_function: $(patsubst %/test.c,%/test,$(wildcard $(DIR_LIB_BON)/*/test.c))
