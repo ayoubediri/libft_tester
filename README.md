@@ -63,7 +63,7 @@ make Bonus_functions
   
 
 - Additional functions:
-  ❎calloc
+  🆗calloc
   🆗strdup
   ❎ft_substr
   ❎ft_strjoin

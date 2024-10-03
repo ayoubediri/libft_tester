@@ -90,6 +90,9 @@ ft_strncmp: $(DIR_LIB_FUN)/strncmp/test
 .PHONY: ft_strdup
 ft_strdup: $(DIR_LIB_ADD)/strdup/test
 
+.PHONY: ft_calloc
+ft_calloc: $(DIR_LIB_ADD)/calloc/test
+
 .PHONY: Libc_functions
 Libc_functions: $(patsubst %/test.c,%/test,$(wildcard $(DIR_LIB_FUN)/*/test.c))
 
