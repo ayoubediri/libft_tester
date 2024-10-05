@@ -65,7 +65,7 @@ make Bonus_functions
 - Additional functions:
   🆗calloc
   🆗strdup
-  ❎ft_substr
+  🆗ft_substr
   ❎ft_strjoin
   ❎ft_strtrim
   ❎ft_split
