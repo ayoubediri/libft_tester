@@ -99,6 +99,9 @@ ft_substr: $(DIR_LIB_ADD)/ft_substr/test
 .PHONY: ft_strjoin
 ft_strjoin: $(DIR_LIB_ADD)/ft_strjoin/test
 
+.PHONY: ft_strtrim                                                                                                  
+ft_strtrim: $(DIR_LIB_ADD)/ft_strtrim/test
+
 .PHONY: Libc_functions
 Libc_functions: $(patsubst %/test.c,%/test,$(wildcard $(DIR_LIB_FUN)/*/test.c))
 
