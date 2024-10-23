@@ -11,22 +11,27 @@
 #define HEAVENLY "\033[0;36m"
 #define PERPUL "\033[0;35m"
 
-size_t my_strlcat(char *dst, const char *src, size_t dstsize) {
-    size_t dst_len = strnlen(dst, dstsize);
-    size_t src_len = strlen(src);
+size_t my_strlcat(char *dst, const char *src, size_t dstsize) 
+{
+    size_t    src_len;
+    size_t    dst_len;
+    
+    src_len = ft_strlen(src);
+    dst_len = ft_strlen(dst);
+    if (dst_len >= dstsize)
+        dst_len = dstsize;
 
-    if (dst_len == dstsize) {
-        return dst_len + src_len;
-    }
+    if (dst_len == dstsize)
+        return (dstsize + src_len);
+    if (src_len < dstsize - dst_len)
+        ft_memcpy(dst + dst_len, src, src_len + 1);
+    else
+    {
 
-    if (src_len < dstsize - dst_len) {
-        memcpy(dst + dst_len, src, src_len + 1);
-    } else {
-        memcpy(dst + dst_len, src, dstsize - dst_len - 1);
+        ft_memcpy(dst + dst_len, src, dstsize - dst_len - 1);
         dst[dstsize - 1] = '\0';
     }
-
-    return dst_len + src_len;
+    return (dst_len + src_len);
 }
 int test0()
 {
