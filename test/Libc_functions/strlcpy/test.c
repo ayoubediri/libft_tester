@@ -11,11 +11,6 @@
 #define HEAVENLY "\033[0;36m"
 #define PERPUL "\033[0;35m"
 
-
-ft_strlcpy.c
-Copy
-#include "libft.h"
-
 size_t    my_strlcpy(char *dst, const char *src, size_t dstsize)
 {
     size_t    src_len;
