@@ -391,7 +391,7 @@ int test11()
 	unsigned int n = 99;
 	printf("[+] WATH WE HAVE :"); 
 	printf(HEAVENLY "str1 : [%s]  | str2 : [%s] | n : [%d]\n" RESET, test_a, test_b, n);
-	int res = my_lstrlcpy(test_a, test_b, n);
+	int res = my_strlcpy(test_a, test_b, n);
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %d\n" RESET, res);
 	int y_res = ft_strlcpy(test_c, test_b, n);
