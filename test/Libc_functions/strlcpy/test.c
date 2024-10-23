@@ -11,6 +11,26 @@
 #define HEAVENLY "\033[0;36m"
 #define PERPUL "\033[0;35m"
 
+
+ft_strlcpy.c
+Copy
+#include "libft.h"
+
+size_t    my_strlcpy(char *dst, const char *src, size_t dstsize)
+{
+    size_t    src_len;
+    
+    src_len = ft_strlen(src);
+    if (src_len + 1 < dstsize)
+        ft_memcpy(dst, src, src_len + 1);
+    else if (dstsize != 0)
+    {
+        ft_memcpy(dst, src, dstsize - 1);
+        dst[dstsize - 1] = 0;
+    }
+    return (src_len);
+}
+
 int test0()
 {
 	printf(YELLOW "==============================================\n" RESET);	
@@ -23,7 +43,7 @@ int test0()
 	unsigned int n = 9;
 	printf("[+] WATH WE HAVE :"); 
 	printf(HEAVENLY "str1 : [%s]  | str2 : [%s] | n : [%d]\n" RESET, test_a, test_b, n);
-	int res = strlcpy(test_a, test_b, n) ;
+	int res = my_strlcpy(test_a, test_b, n) ;
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %d\n" RESET, res);
 	int y_res = ft_strlcpy(test_c, test_b, n); 
@@ -56,7 +76,7 @@ int test1()
 	unsigned int n = 10;
 	printf("[+] WATH WE HAVE :"); 
 	printf(HEAVENLY "str1 : [%s]  | str2 : [%s] | n : [%d]\n" RESET, test_a, test_b, n);
-	int res = strlcpy(test_a, test_b, n);
+	int res = my_strlcpy(test_a, test_b, n);
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %d\n" RESET, res);
 	int y_res = ft_strlcpy(test_c, test_b, n);
@@ -88,7 +108,7 @@ int test2()
 	unsigned int n = 50;
 	printf("[+] WATH WE HAVE :"); 
 	printf(HEAVENLY "str1 : [%s]  | str2 : [%s] | n : [%d]\n" RESET, test_a, test_b, n);
-	int res = strlcpy(test_a, test_b, n);
+	int res = my_strlcpy(test_a, test_b, n);
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %d\n" RESET, res);
 	int y_res = ft_strlcpy(test_c, test_b, n);
@@ -120,7 +140,7 @@ int test3()
 	unsigned int n = 4;
 	printf("[+] WATH WE HAVE :"); 
 	printf(HEAVENLY "str1 : [%s]  | str2 : [%s] | n : [%d]\n" RESET, test_a, test_b, n);
-	int res = strlcpy(test_a, test_b, n);
+	int res = my_strlcpy(test_a, test_b, n);
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %d\n" RESET, res);
 	int y_res = ft_strlcpy(test_c, test_b, n);
@@ -152,7 +172,7 @@ int test4()
 	unsigned int n = 0;
 	printf("[+] WATH WE HAVE :"); 
 	printf(HEAVENLY "str1 : [%s]  | str2 : [%s] | n : [%d]\n" RESET, test_a, test_b, n);
-	int res = strlcpy(test_a, test_b, n);
+	int res = my_strlcpy(test_a, test_b, n);
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %d\n" RESET, res);
 	int y_res = ft_strlcpy(test_c, test_b, n);
@@ -184,7 +204,7 @@ int test5()
 	unsigned int n = strlen(test_a) * 2;
 	printf("[+] WATH WE HAVE :"); 
 	printf(HEAVENLY "str1 : [%s]  | str2 : [%s] | n : [%d]\n" RESET, test_a, test_b, n);
-	int res = strlcpy(test_a, test_b, n);
+	int res = my_strlcpy(test_a, test_b, n);
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %d\n" RESET, res);
 	int y_res = ft_strlcpy(test_c, test_b, n);
@@ -216,7 +236,7 @@ int test6()
 	unsigned int n = 10;
 	printf("[+] WATH WE HAVE :"); 
 	printf(HEAVENLY "str1 : [%s]  | str2 : [%s] | n : [%d]\n" RESET, test_a, test_b, n);
-	int res = strlcpy(test_a, test_b, n);
+	int res = my_strlcpy(test_a, test_b, n);
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %d\n" RESET, res);
 	int y_res = ft_strlcpy(test_c, test_b, n);
@@ -248,7 +268,7 @@ int test7()
 	unsigned int n = strlen(test_a) * 2;
 	printf("[+] WATH WE HAVE :"); 
 	printf(HEAVENLY "str1 : [%s]  | str2 : [%s] | n : [%d]\n" RESET, test_a, test_b, n);
-	int res = strlcpy(test_a, test_b, n);
+	int res = my_strlcpy(test_a, test_b, n);
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %d\n" RESET, res);
 	int y_res = ft_strlcpy(test_c, test_b, n);
@@ -280,7 +300,7 @@ int test8()
 	unsigned int n = 0;
 	printf("[+] WATH WE HAVE :"); 
 	printf(HEAVENLY "str1 : [%s]  | str2 : [%s] | n : [%d]\n" RESET, test_a, test_b, n);
-	int res = strlcpy(test_a, test_b, n);
+	int res = my_strlcpy(test_a, test_b, n);
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %d\n" RESET, res);
 	int y_res = ft_strlcpy(test_c, test_b, n);
@@ -312,7 +332,7 @@ int test9()
 	unsigned int n = 15;
 	printf("[+] WATH WE HAVE :"); 
 	printf(HEAVENLY "str1 : [%s]  | str2 : [%s] | n : [%d]\n" RESET, test_a, test_b, n);
-	int res = strlcpy(test_a, test_b, n);
+	int res = my_strlcpy(test_a, test_b, n);
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %d\n" RESET, res);
 	int y_res = ft_strlcpy(test_c, test_b, n);
@@ -344,7 +364,7 @@ int test10()
 	unsigned int n = 5;
 	printf("[+] WATH WE HAVE :"); 
 	printf(HEAVENLY "str1 : [%s]  | str2 : [%s] | n : [%d]\n" RESET, test_a, test_b, n);
-	int res = strlcpy(test_a, test_b, n);
+	int res = my_strlcpy(test_a, test_b, n);
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %d\n" RESET, res);
 	int y_res = ft_strlcpy(test_c, test_b, n);
@@ -376,7 +396,7 @@ int test11()
 	unsigned int n = 99;
 	printf("[+] WATH WE HAVE :"); 
 	printf(HEAVENLY "str1 : [%s]  | str2 : [%s] | n : [%d]\n" RESET, test_a, test_b, n);
-	int res = strlcpy(test_a, test_b, n);
+	int res = my_lstrlcpy(test_a, test_b, n);
 	printf("[+] WATH SHOULD WE GET :");
 	printf(HEAVENLY " %d\n" RESET, res);
 	int y_res = ft_strlcpy(test_c, test_b, n);
