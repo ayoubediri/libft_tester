@@ -83,7 +83,7 @@ int test2()
 	char *y_res = ft_memchr(test_a, c, n);
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %s\n\n" RESET, y_res);
-	if ((res == y_res) || (res == y_res))
+	if (res == y_res)
 	{
 		printf(GREEN "THE TEST [ PASS ] ╰(*-*)╯  GOOD JOB !!\n\n" RESET);
 		return (1);
@@ -325,7 +325,7 @@ int test11()
 	char *y_res = ft_memchr(test_a, c, n);
 	printf("[+] WATH YOURS FUNCTOINS GET :");
 	printf(HEAVENLY " %s\n\n" RESET, y_res);
-	if ((res == y_res))
+	if (res == y_res)
 	{
 		printf(GREEN "THE TEST [ PASS ] ╰(*-*)╯  GOOD JOB !!\n\n" RESET);
 		return (1);
